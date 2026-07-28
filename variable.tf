@@ -6,6 +6,7 @@ variable "azurerm_subnet" {type = string }
 variable "address_prefixes" {
   type    = list(string)
   default = ["10.0.1.0/24"]
+  
 }
 variable "azurerm_public_ip" {type = string }
 variable "azurerm_network_interface" {type = string }

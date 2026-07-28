@@ -13,7 +13,7 @@ workflow_dispatch:
 
 jobs:
 
-  vm_project
+  vm_project:
 
     runs-on: ubuntu-latest
 

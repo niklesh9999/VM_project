@@ -23,10 +23,12 @@ variable "vm_size" {
 
 variable "admin_username" {
   type = string
+  
 }
 
 variable "admin_password" {
   type = string
+  default = "Azurenik@123"
 }
 
 variable "azurerm_virtual_machine_name" {

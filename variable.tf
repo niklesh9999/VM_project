@@ -53,7 +53,7 @@ variable "admin_password" {
 
 variable "azurerm_virtual_linux_machine_name" {
   type = string
-  default = "virtual_network"
+  default = "vm"
 }
 
 

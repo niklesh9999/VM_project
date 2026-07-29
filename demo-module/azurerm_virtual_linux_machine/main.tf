@@ -1,5 +1,7 @@
-resource "azurerm_linux_virtual_machine" "azurerm_virtual_machine" {
-  name                = var.azurerm_virtual_machine_name
+resource "azurerm_linux_virtual_machine" "azurerm_virtual_linux_machine" {
+  name                = var.azurerm_virtual_linux_machine_name
+  computer_name       = "vm1"
+
   resource_group_name = var.azurerm_resource_group_name
   location            = var.location
   size                = var.vm_size

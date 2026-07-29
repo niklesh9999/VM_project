@@ -51,7 +51,7 @@ variable "admin_password" {
   default = "Azurenik@123"
 }
 
-variable "azurerm_virtual_machine_name" {
+variable "azurerm_virtual_linux_machine_name" {
   type = string
   default = "virtual_network"
 }

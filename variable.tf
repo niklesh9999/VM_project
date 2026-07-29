@@ -37,6 +37,7 @@ variable "azurerm_network_interface" {
 
 variable "vm_size" {
   type = string
+  default = "Standard_D2s_v3"
 }
 
 variable "admin_username" {

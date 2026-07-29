@@ -10,8 +10,7 @@ terraform {
 
 provider "azurerm" {
   features {}
-
-  
+  subscription_id = var.subscription_id
 }
 
 
@@ -52,7 +51,7 @@ module "azurerm_public_ip" {
 }
 
 module "nic" {
-  depends_on = [ var.azurerm_subnet ]
+  depends_on = [ module.azurerm_subnet ]
   source = "./demo-module/azurerm_nic"
   azurerm_network_interface = var.azurerm_network_interface
   azurerm_resource_group_name = var.azurerm_resource_group_name
@@ -64,7 +63,7 @@ module "nic" {
   }
 
   module "azurerm_virtual_machine" {
-    depends_on = [ var.azurerm_network_interface ]
+    depends_on = [ module.azurerm_virtual_network ]
     source = "./demo-module/azurerm_virtual_machine"
     azurerm_virtual_machine_name = var.azurerm_virtual_machine_name
     azurerm_resource_group_name = var.azurerm_resource_group_name

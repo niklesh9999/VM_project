@@ -1,6 +1,6 @@
 variable "azurerm_resource_group_name" { 
   type = string
-  default = "NikRG1" 
+  default = "NikRG10" 
   }
 variable "location" { 
   type = string 

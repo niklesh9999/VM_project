@@ -62,10 +62,10 @@ module "nic" {
     
   }
 
-  module "azurerm_virtual_machine" {
+  module "azurerm_linux_virtual_machine" {
     depends_on = [ module.azurerm_virtual_network ]
-    source = "./demo-module/azurerm_virtual_machine"
-    azurerm_virtual_machine_name = var.azurerm_virtual_machine_name
+    source = "./demo-module/azurerm_virtual_linux_machine"
+    azurerm_virtual_linux_machine_name = var.azurerm_virtual_linux_machine_name
     azurerm_resource_group_name = var.azurerm_resource_group_name
     location = var.location
     vm_size = var.vm_size

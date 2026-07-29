@@ -9,6 +9,7 @@ on:
 jobs:
   terraform:
     runs-on: ubuntu-latest
+    
 
     env:
       ARM_CLIENT_ID: ${{ secrets.ARM_CLIENT_ID }}

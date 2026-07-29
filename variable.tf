@@ -57,6 +57,10 @@ variable "azurerm_virtual_machine_name" {
 }
 
 
+variable "subscription_id" {
+  type = string
+}
+
 
 
 

@@ -9,6 +9,7 @@ on:
 jobs:
   terraform:
     runs-on: ubuntu-latest
+    
 
     env:
       TF_VAR_subscription_id: ${{ secrets.ARM_SUBSCRIPTION_ID }}
